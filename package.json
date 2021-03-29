@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "percy exec -- cypress run"
+    "test": "percy exec -- cypress run",
+    "cypress:open": "cypress open"
   },
   "keywords": [
     "cypress",

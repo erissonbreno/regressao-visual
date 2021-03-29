@@ -25,3 +25,10 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import '@percy/cypress'
+
+Cypress.Commands.add('preencheOsCamposObrigatorios', () => {
+    cy.get('#first-name').type('Erisson')
+    cy.get('#last-name').type('Batista')
+    cy.get('#email').type('erisson@batista.com')
+    cy.get('#agree').check()
+})
